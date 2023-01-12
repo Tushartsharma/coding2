@@ -1,0 +1,579 @@
+body {
+  background-color: #ebedf9;
+  font-family: sans-serif;
+}
+
+.both{
+  display: flex;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+.login{
+  padding-left: 220px;
+   padding-top:20px; 
+   font-size: small;
+}
+.left {
+  background-color: #d7daeb;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 35%;
+}
+.right{
+  border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: white;
+    width: 45%;
+    
+}
+.pass{
+  display: flex;
+}
+.content{
+  margin-left: 70px;
+  white-space: nowrap;
+  height: 90vh;
+}
+.create {
+  background-color: #3ea2f8;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 70%;
+  font-size: medium;
+}
+.google{
+  background-color: white;
+  border-color: white;
+  border-radius: 25px;
+  width: 70%;
+  height: 40px;
+  text-align: center;
+  border-color: rgba(128, 128, 128, 0.226);
+}
+.facebook{
+  background-color: white;
+  border-color: white;
+  border-radius: 25px;
+  width: 70%;
+  height: 40px;
+  border-color: rgba(128, 128, 128, 0.226);
+}
+.divider{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.divider::after,
+.divider::before {
+  content: "";
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  flex: 0.4;
+}
+@media (max-width: 1200px) {
+ .pass{
+  display: block;
+ }
+ .inp{
+  width: 68%;
+ }
+ .login{
+  padding-left: 10px;
+ }
+  }
+  @media (max-width:800px){
+    .pass{
+      display: block;
+    }
+    .inp{
+      width: 68%;
+    }
+    .left{
+      display: none;
+    }
+  }
+  
+
+
+
+
+
+    <body>
+    <div class="main">
+      <div class="both">
+        <div class="left">
+          <h2 class="logo" style="padding-left: 30px;">Craftwork</h2>
+          <img class="image" src="./images/Humans.png" style="height: auto;">
+        </div>
+        <div class="right">
+
+          <div class="content">
+          <div class="login">Already have an account?<a href="#">Login</a></div>
+          <h1>Create account</h1>
+
+          <label for="Username"><b>Username</b></label><br>
+          <input type="text" id="Username" style="background-color: rgba(128, 128, 128, 0.164);border-radius:5px; border-color:rgba(128, 128, 128, 0.164);border-radius:5px;width: 68%; height: 30px;border: none;" required><br><br>
+
+          <label for="email"><b>Email</b></label><br>
+          <input type="email" id="email" style="background-color: rgba(128, 128, 128, 0.164);border-radius:5px; border-color:rgba(128, 128, 128, 0.164);border-radius:5px;width: 68%; height: 30px;border: none;" required><br><br>
+
+          <div class="pass">
+            <div class="pass12"><label for="password"><b>Password</b></label><br><input class="inp" type="password" id="password"style="background-color: rgba(128, 128, 128, 0.164);border-radius:5px; border-color:rgba(128, 128, 128, 0.164);border-radius:5px;height: 30px;border: none;" required></div>&nbsp;&nbsp;
+            <div class="pass12"><label for="confirm"><b>Confirm</b></label><br><input class="inp" type="password" id="confirm"style="background-color: rgba(128, 128, 128, 0.164);border-radius:5px; border-color:rgba(128, 128, 128, 0.164);border-radius:5px; height: 30px;border: none;" required></div>
+          </div><br>
+
+          <div class="check" style="font-size: small;">
+          <input type="checkbox" required> By creating an account, you agree to the Terms of Service<br>and Conditions, and 
+            Privacy Policy <br><br></div>
+
+          <button class="create"><b>Create account</b></button><br><br>
+
+          <div class="divider">or</div><br>
+
+          <button class="google"><img src="C:\Users\DELL\Downloads\goggle.png" style="height: 20px; float: left;"><b>Continue with Google</b></button><br><br>
+          <button class="facebook"><img src="C:\Users\DELL\Downloads\facebook.png" style="height: 20px; float: left;"><b>Continue with Facebook</b></button>
+      </div></div></div>
+    </div>
+    </div>
+   </body>
+
+
+
+
+   body {
+  background-color: #ebedf9;
+  font-family: sans-serif;
+}
+.main {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.both {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+}
+.left {
+  grid-column-start: 2;
+  background-color: #d7daeb;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+.right {
+  grid-column-start: 3;
+  background-color: white;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.login {
+  display: flex;
+  font-size: small;
+  justify-content: end;
+}
+.pass {
+  display: flex;
+  
+  width: 100%;
+  align-self: center;
+}
+.content{
+  display: grid;
+  grid-template-rows: 2fr 1.5fr 1.5fr 1.5fr 1fr 1fr 1.5fr 1.5fr 1.5fr;
+  
+}
+.heading{
+  align-self: center;
+  font-size: xx-large;
+}
+input[type=text] {
+  width:100%;
+  height: 30px;
+  background-color: #f6f6f6;
+  border-radius:5px;
+  border-color:rgba(128, 128, 128, 0.164);
+}
+
+input[type=email] {
+  width:100%;
+  height: 30px;
+  background-color: #f6f6f6;
+  border-radius:5px;
+  border-color:rgba(128, 128, 128, 0.164);
+}
+input[type=password] {
+  width:100%;
+  height: 30px;
+  background-color: #f6f6f6;
+  border-radius:5px;
+  border-color:rgba(128, 128, 128, 0.164);
+}
+.input1 {
+  align-self: center;
+  border-radius: 5px;
+  border: none;
+}
+.input2 {
+  align-self: center;
+  border-radius: 5px;
+  border: none;
+}
+.check {
+  align-self: flex-start;
+}
+.btn {
+  align-self: center;
+}
+.create {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #3ea2f8;
+  color: white;
+  font-size: medium;
+
+}
+.divider{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.divider::after,
+.divider::before {
+  content: "";
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  flex: 1;
+}
+.btn2 {
+  align-self: center;
+}
+.google {
+  width: 100%;
+  background-color: white;
+  border-color: rgba(128, 128, 128, 0.226);
+  border-radius: 25px;
+}
+.btn3 {
+  align-self: center;
+}
+.facebook {
+  width: 100%;
+  background-color: white;
+  border-color: rgba(128, 128, 128, 0.226);
+  border-radius: 25px;
+}
+
+
+
+.both {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> My Website </title>
+    <link rel="stylesheet" href="Css/style.css">
+  </head>
+<body>
+  <div class="main">
+    <div class="both">
+      <div class="left">
+        <p><b>Craftwork</b></p>
+        <img class="image" src="./images/Humans.png"></div>
+        <div class="right">
+          
+          <div class="login">Already have an account?<a href="#">Login</a></div>
+          <div class="content">
+          <div class="heading"><p><b>Create account</b></p></div>
+           
+          <div class="input1"><label for="Username"><b>Username</b></label>
+          <input type="text" id="Username" required></div>
+
+          <div class="input2"><label for="email"><b>Email</b></label>
+          <input type="email" id="email"required></div>
+          
+          <div class="pass">
+            <div class="pass12"><label for="password"><b>Password</b></label><input class="inp" type="password" id="password" required></div>
+            <div class="pass12"><label for="confirm"><b>Confirm</b></label><input class="inp" type="password" id="confirm" required></div>
+          </div>
+          <div class="check" style="font-size: small;">
+          <input type="checkbox" required> By creating an account, you agree to the Terms of Service and Conditions, and 
+            Privacy Policy </div>
+            <div class="btn"><button class="create"><b>Create account</b></button></div>
+            <div class="divider">or</div>
+<div class="btn2"><button class="google"><img src="./images/goggle.png" style=" height: 20px; float: left;"><b>Continue with Google</b></button></div>
+<div class="btn3"><button class="facebook"><img src="./images/facebook.png" style=" height: 20px; float: left;"><b>Continue with Facebook</b></button></div>
+        </div></div>
+      </div>
+    </div>
+</body>
+   </html>
+
+
+
+   *{
+  margin: 0 auto;
+  padding: auto;
+}
+body {
+  background-color: #ebedf9;
+  font-family: sans-serif;
+}
+
+.both {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  align-content: center;
+  max-height: 100%;
+}
+.left {
+  grid-column-start: 2;
+}
+.right {
+  grid-column-start: 3;
+}
+input {
+  width: 100%;
+}
+.pass {
+  display: flex;
+}
+
+<div class="main">
+
+    <div class="both">
+
+      <div class="left">
+        <h2 class="logo">Craftwork</h2>
+        <img class="image" src="./images/Humans.png">
+      </div>
+
+      <div class="right">
+        <div class="login">Already have an account?<a href="#">Login</a></div>
+        <h1 class="create_account">Create account</h1>
+        <form>
+          <div class="input1"><span class="details"><b>Username</b></span>
+            <input type="text" id="Username" required></div>
+  
+            <div class="input2"><span class="details"><b>Email</b></span>
+            <input type="email" id="email"required></div>
+            
+            <div class="pass">
+              <div class="pass12"><span class="details"><b>Password</b></span>
+              </label><input class="inp" type="password" id="password" required></div>
+              <div class="pass12"><span class="details"><b>Confirm</b></span>
+                <input class="inp" type="password" id="confirm" required></div>
+            </div>
+            <div class="check" style="font-size: small;">
+            <input type="checkbox" required> By creating an account, you agree to the Terms of Service and Conditions, 
+            and Privacy Policy </div>
+          
+            <div class="btn"><button class="create"><b>Create account</b></button></div>
+            <div class="divider">or</div>
+            <div class="btn2"><button class="google"><img src="./images/goggle.png" style=" height: 20px; float: left;">
+            <b>Continue with Google</b></button></div>
+            <div class="btn3"><button class="facebook"><img src="./images/facebook.png" style=" height: 20px; float: left;">
+            <b>Continue with Facebook</b></button></div>
+  
+          
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> My Website </title>
+    <link rel="stylesheet" href="Css/style.css">
+  </head>
+<body>
+  <div class="main">
+ <div class="both">
+  <div class="left">
+    <div class="logo"><i class="fa fa-globe"></i> &nbsp; Craftwork</div>
+    <span class="image"><img src="./images/Humans.png"></span>
+    </div>
+
+    <div class="right">
+      <div class="login">
+        <div class="login1">Already have an account?</div>
+        <a class="login2" href="#">Login</a>
+      </div>
+      <form>
+
+        <div class="heading">Create account</div>
+        <div class="username">
+          <label for="user">Username</label>
+          <input class="input1" type="text" id="user" required>
+        </div>
+
+        <div class="email">
+          <label for="mail">Email</label>
+          <input class="input1" type="email" id="mail" required>
+        </div>
+
+        <div class="password">
+          <div class="password1">
+            <label for="pass1">Password</label>
+            <input class="input1" type="password" id="pass" required>
+          </div>
+          <div class="password2">
+            <label for="pass2">Confirm</label>
+            <input class="input1" type="password" id="pass2" required>
+          </div>
+        </div>
+
+
+        <div class="check" style="font-size: small;">
+          <input type="checkbox" required> By creating an account, you agree to the Terms of Service and Conditions, and 
+            Privacy Policy </div>
+            <div class="btn"><button class="create" type="submit">Create account</button></div>
+            <div class="divider">or</div>
+            <div class="btn2"><button class="google"><img src="./images/goggle.png" style=" height: 20px; float: left;">Continue with Google</button></div>
+            <div class="btn3"><button class="facebook"><img src="./images/facebook.png" style=" height: 20px; float: left;">Continue with Facebook</button></div>
+          </form></div>
+    </div>
+    </div>
+</body>
+   </html>
+
+
+
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ebedf9;
+}
+.both {
+    display: grid;
+    grid-template-columns: 1fr 2.75fr 3fr 1fr;
+    margin-top: 1%;
+}
+.left {
+    grid-column-start: 2;
+    background-color: #d7daeb;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.logo {
+    font-size: large;
+    font-weight: bolder;
+}
+.image {
+    display: flex;
+}
+
+
+.right {
+    grid-column-start: 3;
+    background-color: white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.logo {
+    padding: 5% 0 0 5%;
+}
+.login {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5% 5% 0 0;
+}
+.heading {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-bottom: 10%;
+}
+form {
+    margin: 5% 18% 1% 18% ;
+}
+form .username {
+    margin-bottom: 3%;
+}
+form .email {
+    margin-bottom: 3%;
+}
+form .check {
+    margin-bottom: 6%;
+}
+form .divider {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.divider::after,
+.divider::before {
+    content: "";
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-size: medium;
+    font-weight: bold;
+}
+.password {
+    display: flex;
+    justify-content: space-between;
+}
+.input1 {
+    width: 100%;
+    padding: 0;
+    margin: 5px 0 0 0;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+}
+.btn .create {
+    width: 100%;
+    background-color: #3ea2f8;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    
+}
+.btn2 .google {
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+    border-radius: 20px;
+     border: solid 1px gray;
+     margin-bottom: 6%;
+}
+.btn3 .facebook {
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 1px gray;
+}

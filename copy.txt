@@ -1,0 +1,422 @@
+body {
+    background-color: #ebedf9;
+    font-family: sans-serif;
+  }
+  .main {
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  .both {
+    display: grid;
+    grid-template-columns: 1fr 2.75fr 3fr 1fr;
+  }
+  .left {
+    grid-column-start: 2;
+    background-color: #d7daeb;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+  }
+  .right {
+    grid-column-start: 3;
+    background-color: white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  .login {
+    display: flex;
+    font-size: small;
+    justify-content: end;
+  }
+  .pass {
+    display: flex;
+    
+    width: 100%;
+    align-self: start;
+    
+  }
+  .content{
+    display: grid;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1.5fr .5fr 1.5fr 1.5fr;
+    padding: 10%;
+    
+  }
+  .heading{
+    align-self: start;
+    font-size: xx-large;
+  }
+  input[type=text] {
+    width:100%;
+    height: 30px;
+    background-color: #f6f6f6;
+    border-radius:5px;
+    border-color:rgba(128, 128, 128, 0.164);
+  }
+  
+  input[type=email] {
+    width:100%;
+    height: 30px;
+    background-color: #f6f6f6;
+    border-radius:5px;
+    border-color:rgba(128, 128, 128, 0.164);
+  }
+  input[type=password] {
+    width:100%;
+    height: 30px;
+    background-color: #f6f6f6;
+    border-radius:5px;
+    border-color:rgba(128, 128, 128, 0.164);
+  }
+  .input1 {
+    align-self: center;
+    border-radius: 5px;
+    border: none;
+  }
+  .input2 {
+    align-self: flex-start;
+    border-radius: 5px;
+    border: none;
+  }
+  .check {
+    align-self: flex-start;
+  }
+  .btn {
+    align-self: center;
+  }
+  .create {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #3ea2f8;
+    color: white;
+    font-size: medium;
+    height: 40px;
+  
+  }
+  .divider{
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .divider::after,
+  .divider::before {
+    content: "";
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    flex: 1;
+  }
+  .btn2 {
+    align-self: center;
+  }
+  .google {
+    width: 100%;
+    background-color: white;
+    border-color: rgba(128, 128, 128, 0.226);
+    border-radius: 25px;
+    height: 40px;
+  }
+  .btn3 {
+    align-self: center;
+  }
+  .facebook {
+    width: 100%;
+    background-color: white;
+    border-color: rgba(128, 128, 128, 0.226);
+    border-radius: 25px;
+    height: 40px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+.main-div {
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  width: 900px;
+  height: 650px;
+}
+
+.left-container {
+  float: left;
+  width: 400px;
+  height: 650px;
+  
+  background-color: #d7daeb;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.right-container {
+  display: inline-block;
+  width: 500px;
+  height: 650px;
+  
+  background-color: white;
+  border-radius: 0px 30px 30px 0px;
+}
+
+.username-div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 100px;
+  padding-right: 105px;
+}
+
+.mail-div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 100px;
+  padding-right: 105px;
+}
+
+.password-div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 100px;
+  padding-right: 105px;
+}
+
+.tnc-div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 100px;
+  padding-right: 105px;
+  
+}
+
+input[type=text] {
+  width: 100%;
+  height: 30px;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+}
+
+input[type=password] {
+  height: 30px;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+}
+
+.psw-el-div2 {
+  margin-left: 3.224px;
+}
+
+.createbtn {
+  background-color: #3ea2f8;
+  border-radius: 10px 10px 10px 10px;
+  border: none;
+  color: white;
+}
+
+.google {
+  background: none;
+  border: solid 2px grey;
+}
+
+.google:hover {
+  background-color: rgb(203, 203, 203);
+}
+
+.facebook {
+  background-color: white;
+  border: solid 2px grey;
+}
+
+.facebook:hover {
+  background-color: rgb(203, 203, 203);
+}
+
+button {
+  width: 100%;
+  position: relative;
+  padding: 12px 40px;
+  text-align: center;
+  border-radius: 30px 30px 30px 30px;
+  font-size: 95%;
+  font-family: sans-serif;
+}
+
+.glogo {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.flogo {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h2 {
+  padding-left: 100px;
+  padding-top: 25px;
+}
+
+.existing-acc-login {
+  float: right;
+  font-size: small;
+  padding-right: 10px;
+}
+
+.submit-btn-div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 100px;
+  padding-right: 105px;
+}
+
+.google-btn-div {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-left: 100px;
+  padding-right: 105px;
+}
+
+.facebook-btn-div {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 100px;
+  padding-right: 105px;
+}
+
+.psw-element {
+  display: block;
+}
+
+.divider {
+  text-align: center;
+  color: rgb(151, 151, 151);
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.cfw-logo {
+  padding-left: 10px;
+  padding-top: 10px;
+  position: relative;
+  float: left;
+}
+
+label {
+  font-size: 90%;
+}
+
+.tnc {
+  font-size: 80%;
+  color: gray;
+}
+
+.psw-el-div {
+  display: inline-block;
+}
+
+.tnc-el-div {
+  display: inline-block;
+  width: fit-content;
+}
+
+.tnc-el-div2 {
+  width: 90%;
+  display: inline-block;
+}
+
+@media (max-width: 1000px) {
+  .main-div {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 650px;
+  }
+
+  .left-container {
+    display: none;
+  }
+  .right-container {
+    display: table;
+    border-radius: 30px 30px 30px 30px;
+    width: 300px;
+  }
+}
+
+ <div class="main">
+    <div class="both">
+      <div class="left">
+        <p><b>Craftwork</b></p>
+        <img class="image" src="./images/Humans.png"></div>
+        <div class="right">
+
+
+<div class="main">
+  <div class="both">
+    <div class="left">
+      <div class="logo"></div>
+      <div class="image"><image src="./images/Humans.png"></image></div>div
+    </div>
+  </div>
+ </div>
+
+
+          
+          </a><div class="login">Already have an account?<a href="#">Login</div>
+          <div class="content">
+          <div class="heading"><p><b>Create account</b></p></div>
+           
+          <div class="input1"><label for="Username"><b>Username</b></label>
+          <input type="text" id="Username" required></div>
+
+          <div class="input2"><label for="email"><b>Email</b></label>
+          <input type="email" id="email"required></div>
+          
+          <div class="pass">
+            <div class="pass12"><label for="password"><b>Password</b></label><input class="inp" type="password" id="password" required></div>
+            <div class="pass12"><label for="confirm"><b>Confirm</b></label><input class="inp" type="password" id="confirm" required></div>
+          </div>
+          <div class="check" style="font-size: small;">
+          <input type="checkbox" required> By creating an account, you agree to the Terms of Service and Conditions, and 
+            Privacy Policy </div>
+            <div class="btn"><button class="create"><b>Create account</b></button></div>
+            <div class="divider">or</div>
+            <div class="btn2"><button class="google"><img src="./images/goggle.png" style=" height: 20px; float: left;"><b>Continue with Google</b></button></div>
+            <div class="btn3"><button class="facebook"><img src="./images/facebook.png" style=" height: 20px; float: left;"><b>Continue with Facebook</b></button></div>
+        </div></div>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+        <h1 class="create">Create account</h1>
+        <div class="username">
+          <span class="user">Username</span>
+          <input class="input1" type="text" required>
+      </div>
+        <div class="email">
+          <span class="user">Email</span><br>
+          <input class="input1" type="email" required>
+        </div>
+        <div class="pass">
+          <div class="pass1">
+            <span class="user">Password</span>
+          <input class="input2" type="password" required>
+          </div>
+          <div class="pass2">
+            <span class="user">Confirm</span>
+          <input class="input2" type="password" required>
+          </div>
+        </div>

@@ -1,0 +1,228 @@
+body{
+    font-family: sans-serif;
+    background: #f5f8f7;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 110px;
+    line-height: 70px;
+}
+.logo{
+    font-weight: bolder;
+    font-size: x-large;
+    color: #171717;
+  }
+ul{
+
+margin: 0;
+display: flex;
+gap:50px;
+list-style: none;
+}  
+a{
+    color: #7e7e7f;
+    font-weight: 500;
+    font-size: large;
+    text-decoration: none;
+}
+.line{
+    text-decoration: underline;
+}
+.black_background{
+    margin: 0 50px;
+display: flex;
+justify-content: space-around;
+background: #000000;
+height: 600px;
+padding-left: 100px;
+}
+.content{
+    display: flex;
+flex-direction: column;
+align-self: center;
+}
+.content_image{
+    align-self: center;
+    display: flex;
+    align-content: flex-end;
+}
+img{
+    width: 80%;
+}
+span{
+    background: #fd9f00;
+    font-size: 95px;
+background: rgb(252,156,0);
+background: linear-gradient(90deg, rgba(252,156,0,1) 71%, rgba(252,156,0,1) 83%); 
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.heading1{
+    font-size: 100px;
+    font-weight: bold;
+   
+background: rgb(252,156,0);
+background: linear-gradient(90deg, rgba(252,156,0,1) 71%, rgba(254,254,0,1) 83%); 
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.paragraph{
+        color: #c3c3b6;
+        font-size: 21px;
+        line-height: 30px;
+}
+.buttons{
+    display: flex;
+    gap: 60px;
+    margin-top: 30px;
+  }
+.button_para1{
+    padding: 18px 38px;
+    font-size: large;
+    border-radius: 0;
+    border: 1.5px solid;
+    color: #b7b7b7;
+    background-color: transparent;
+
+  }
+  .button_para2{
+    padding: 19.5px 41px;
+    font-size: large;
+    border-radius: 0;
+    color: #e0d4c5;
+    background: linear-gradient(800deg, #494139, #b17d57);
+    border: none;
+  }
+  .footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 80px;
+  }
+  .box1{
+    /* width: 33%; */
+    display: flex;
+  }
+  .box1_heading{
+    color: #f26d76;
+font-size: xxx-large;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 600;
+align-self: center;
+  }
+  .box1_para{
+    color: #f26a73;
+    align-self: flex-end;
+    font-weight: lighter;
+  }
+  .box2{
+    /* width: 33%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .extra{
+    grid-column-start: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* width: 80%; */
+    justify-self: center;
+  }
+  .box2_boxa{
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+  .box2_boxa_paraa{
+   font-size: xx-large;
+   font-weight: 600;
+   color: #88c66a;
+   align-self: center;
+  }
+  .box2_boxa_parab{
+    color: #b6dca4;
+    align-self: center;
+  }
+  .box2_boxb{
+    padding: 30px; 
+    background: #e6eaea;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+  .box2_boxb_paraa{
+    font-size: xx-large;
+    font-weight: 600;
+    color: #7b8288;
+    align-self: center;
+  }
+  .box2_boxb_parab{
+    color: #c8cacd;
+    align-self: center;
+  }
+  .box2_boxc{
+    grid-column-start: 2;
+    justify-self: center;
+    align-self: center;
+    height: 100%;
+    background: #7675fe;
+    border-radius: 15%;
+    justify-self: flex-start;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+padding-left: 30px;
+padding-right: 30px;
+  }
+  .box2_boxc_paraa{
+    color: #f2f6fd;
+    font-size: xxx-large;
+    font-weight: 500;
+  }
+  .box2_boxc_parab{
+    color: #eeeefe;
+  }
+  .box3{
+    /* width: 33%; */
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+  }
+  .number{
+    color: #74bd51;
+font-size: xxx-large;
+font-weight: bold;
+  }
+  .box3_heading{
+    font-size: xxx-large;
+font-weight: bolder;
+  }
+  .box3_para{
+    font-size: large;
+    color: #9fa1a0;
+  }
+  .number1{
+    display: flex;
+flex-direction: column;
+gap: 40px;
+
+  }
+
+  @media(max-width:1100px){
+    .black_background{
+        display: flex;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  .content{
+    display: flex;
+  }

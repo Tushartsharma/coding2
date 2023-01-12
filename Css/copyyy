@@ -1,0 +1,134 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ebedf9;
+}
+.both {
+    display: grid;
+    grid-template-columns: 1fr 2.75fr 3fr 1fr;
+    margin-top: 1%;
+}
+.left {
+    grid-column-start: 2;
+    background-color: #d7daeb;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.logo {
+    font-size: large;
+    font-weight: bolder;
+}
+.right {
+    grid-column-start: 3;
+    background-color: white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.logo {
+    margin: 5% 0 0 5%;
+}
+.login {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5% 5% 0 0;
+}
+.heading {
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+form {
+    margin: 5% 18% 1% 18% ;
+}
+form .username {
+    margin-bottom: 3%;
+}
+form .email {
+    margin-bottom: 3%;
+}
+form .check {
+    margin-bottom: 6%;
+}
+form .divider {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.divider::after,
+.divider::before {
+    content: "";
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-size: medium;
+    font-weight: bold;
+}
+.password {
+    display: flex;
+    justify-content: space-between;
+}
+.input1 {
+    width: 100%;
+    padding: 0;
+    margin: 5px 0 0 0;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+}
+.btn .create {
+    width: 100%;
+    background-color: #3ea2f8;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    
+}
+.btn2 .google {
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+    border-radius: 20px;
+     border: solid 1px gray;
+     margin-bottom: 6%;
+     font-weight: bold;
+}
+.btn3 .facebook {
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 1px gray;
+    font-weight: bold;
+}
+.image {
+    padding: 10% 0 0 10%;
+}
+
+@media (max-width:800px) {
+   .both {
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+   .left{
+    display: none;
+   }
+.right{
+    grid-column-start: 1;
+    justify-self: center;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin-top: 10%;
+    padding-bottom: 0;
+}
+.password {
+    display: block;
+}
+}
